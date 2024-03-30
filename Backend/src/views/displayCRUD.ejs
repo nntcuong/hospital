@@ -13,6 +13,30 @@
         border: 1px solid black;
         border-collapse: collapse;
     }
+    .btn-edit{
+        outline: none;
+        border: none;;
+        border-radius:5px;
+        cursor: pointer;
+        width: 60px;
+
+        height: 25px;
+        background-color: orange;
+        ;
+    }
+    .btn-delete{
+        outline: none;
+        border: none;;
+        border-radius:5px;
+        cursor: pointer;
+        width: 60px;
+
+        height: 25px;
+        background-color: red;
+        ;
+    }
+
+
 </style>
 
 <body>
@@ -36,6 +60,14 @@
                 </td>
                 <td>
                     <%= dataTable[i].address%>
+                </td>
+                <td>
+                    <a href="/edit" class="btn-edit" type ="button">
+                        Edit
+                    </a>
+                    <a href="http://" class="btn-delete" type ="button">
+                        Delete
+                    </a>
                 </td>
             </tr>
             <% }%>
