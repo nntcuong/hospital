@@ -7,6 +7,13 @@
         margin : 0 auto;
         border-radius: 10px;
         background-color: white;
+        position: absolute;
+        top:0;
+        right:0;
+        left:0;
+        bottom:0;
+        height: 300px;
+        margin:auto;
         .login-content{
             padding: 10px;
             .text-login{
@@ -31,6 +38,12 @@
                 border: none;
                 color:white;
 
+            }
+            .social-login{
+                display: flex;
+                i {
+                    font-size:35px;
+                }
             }
         }
     }
